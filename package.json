@@ -1,6 +1,5 @@
 {
   "name": "pet",
-  "version": "0.0.0",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -10,6 +9,8 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
+    "table:dev": "turbo run start --filter=table-generator",
+    "ui:build": "turbo run build --filter=ui",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
